@@ -1,0 +1,7 @@
+n = int(input("Enter a 4 digit no.: "))
+print("Face value: ",end=" ")
+print(n//1000, (n%1000)//100, (n%100)//10, (n%10))
+print("Place value: ", end=" ")
+print((n//1000)*1000, (((n%1000)//100))*100, ((n%100)//10)*10, n%10)
+print("Reverse order: ", end=" ")
+print((n%10)*1000 + ((n%100)//10)*100 + (((n%1000)//100))*10 + (n//1000))
